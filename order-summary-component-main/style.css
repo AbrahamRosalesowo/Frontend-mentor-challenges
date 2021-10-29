@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-body{
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
     background-image: url('./images/pattern-background-desktop.svg');
     background-repeat: no-repeat;
     background-color: #E1E9FF;
@@ -10,34 +18,73 @@ body{
     font-size: 16px;
 }
 
-.card{
+.card {
     width: 400px;
     text-align: center;
     border-radius: 20px;
-    background-color:  #fff;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
 }
-.img-card{
+
+.img-card {
     border-radius: 20px 20px 0px 0px;
     width: 400px;
+    height: 200px;
 }
-.title{
+
+.title {
     font-size: 32px;
     font-weight: 900;
+    padding: 10px;
 }
-.paragraph{
-    width: 290px;
+
+.paragraph {
+    width: 250px;
     text-align: center;
     font-weight: 600;
+    padding: 10px;
 }
-.details{
-    background-color:#F8F9FB;
+
+.img-icon {
+    grid-area: icon;
+}
+
+.bold {
+    grid-area: bold;
+    margin-left: -90px;
+}
+
+.price {
+    grid-area: price;
+    margin-left: -90px;
+}
+
+.change {
+    grid-area: change;
+}
+
+.details {
+    background-color: #F8F9FB;
     width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-areas:
+        'icon bold bold bold f'
+        'icon bold bold bold change'
+        'icon price price price change'
+    ;
 }
-.bold{
+
+.bold {
     font-weight: 900;
 }
 
-button{
+button {
     cursor: pointer;
     width: 300px;
     background: hsl(245, 75%, 52%);
@@ -46,7 +93,8 @@ button{
     padding: 10px;
     box-shadow: 0 12px 16px 0 #3829e03d, 0 17px 50px 0 #0000000e;
 }
-.cancel{
+
+.cancel {
     cursor: pointer;
     background: none;
     border: none;
@@ -54,19 +102,28 @@ button{
     box-shadow: none;
 }
 
-button:hover{
+button:hover {
     opacity: .5;
 }
-.cancel:hover{
+
+.cancel:hover {
     font-weight: 700;
     color: #383636;
     opacity: 10;
 }
 
-a{
+a {
     color: hsl(245, 75%, 52%);
     font-weight: 700;
 }
-a:hover{
+
+a:hover {
     text-decoration: none;
+}
+
+@media (max-width: 500px){
+    body{
+        background-image: url('./images/pattern-background-mobile.svg');
+        background-repeat:repeat-x ;
+    }
 }
