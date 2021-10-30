@@ -62,7 +62,7 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@AbrahamRosalesowo](https://www.frontendmentor.io/profile/AbrahamRosalesowo)
-- Twitter - [@yourusername](https://www.twitter.com/_AbrahamRosales)
+- Twitter - [@_AbrahamRosales](https://www.twitter.com/_AbrahamRosales)
 
 ## Acknowledgments
 
