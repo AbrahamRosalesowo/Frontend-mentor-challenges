@@ -10,3 +10,8 @@ const AbrahamRosales = {
     },
     currentFocus: ["web applications", "English language", "Adult basic education"]
 };
+
+function caca(){
+    console.log('caca');
+}
+caca();
